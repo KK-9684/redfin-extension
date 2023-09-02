@@ -1,0 +1,46 @@
+.imh-notification-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+.imh-noty {
+  background: #fff;
+  min-width: 250px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #323a48;
+  border: 3px solid #c9cfd3;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 33%);
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  -webkit-line-clamp: 10;
+  border-radius: 6px;
+  padding: 6px 10px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: pre-line;
+  word-break: break-word;
+  transform: translate(-100%, 0);
+  transition: all .5s;
+}
+
+.imh-noty.show {
+  transform: translate(0%, 0);
+}
+
+.imh-noty.imh-info {
+  border-color: #17A2B9;
+}
+.imh-noty.imh-success {
+  border-color: #28A745;
+}
+.imh-noty.imh-warning {
+  border-color: #FFC107;
+}
+.imh-noty.imh-error {
+  border-color: #DC3545;
+}

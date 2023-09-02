@@ -1,0 +1,81 @@
+/* Table Style Start */
+.imh-potential-properties--content table {
+  border: 0;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.imh-potential-properties--content tr {
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.imh-potential-properties--content tr:hover, 
+.imh-potential-properties--content tr:nth-child(2n+0):hover {
+  background: #f8fbeb;
+}
+
+.imh-potential-properties--content tr:nth-child(2n+0) {
+  background: white;
+}
+
+.imh-potential-properties--content td {
+  padding: 5px;
+}
+
+.imh-potential-properties--content td:first-child {
+  padding: 0;
+}
+
+.imh-potential-properties--content th:first-child ,
+.imh-potential-properties--content td:first-child 
+{
+  width: 300px
+}
+
+.imh-potential-properties--content th {
+  padding: 5px;
+  background-color: #142029;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: left;
+}
+
+.imh-potential-properties--content img {
+    width: 100%!important;
+}
+/* Table Style End */
+
+/* Propertiest Card Styles Start */
+.imh-card-data-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.imh-days-on-market {
+  
+}
+.him-list-rehab-max-price {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  height: 65px;
+  margin-top: auto;
+}
+.him-rehab-max-price-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  flex: 1;
+}
+.him-rehab-max-price-item--good {
+  background-color: #198754;
+}
+.him-rehab-max-price-item--bad {
+  background-color: #dc3545;
+}
+/* Propertiest Card Styles End */

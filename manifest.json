@@ -1,0 +1,45 @@
+{
+    "name": "Investment IMH",
+    "description": "Google Chrome Extension of Investment IMH",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "js": ["sites/zillow/zillow-init.js"],
+            "css": [
+                "sites/styles/styles.css", 
+                "sites/zillow/zillow.css", 
+                "sites/services/floatingMenu/floatingMenu.css",
+                "sites/services/settingsForm/settingsForm.css",
+                "sites/services/notification/notification.css",
+                "sites/services/compsViews/compsViews.css"
+            ],
+            "matches": ["https://www.zillow.com/*"]
+        },
+        {
+            "js": ["sites/redfin/redfin-init.js"],
+            "css": [
+                "sites/styles/styles.css", 
+                "sites/redfin/redfin.css", 
+                "sites/services/floatingMenu/floatingMenu.css",
+                "sites/services/settingsForm/settingsForm.css",
+                "sites/services/notification/notification.css",
+                "sites/services/compsViews/compsViews.css"
+            ],
+            "matches": ["https://www.redfin.com/*"]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["libs/jquery-3.6.0.min.js", "sites/zillow/zillow.js", "/sites/consts/*", "/sites/services/*", "node_modules/*"],
+        "matches": ["https://www.zillow.com/*"]
+    }, {
+        "resources": ["libs/jquery-3.6.0.min.js", "sites/redfin/redfin.js", "/sites/consts/*", "/sites/services/*", "node_modules/*"],
+        "matches": ["https://www.redfin.com/*"]
+    }]
+        
+    
+  }
